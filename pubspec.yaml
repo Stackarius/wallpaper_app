@@ -45,7 +45,6 @@ dependencies:
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.2.1
   device_frame: ^1.4.0
-  win32: ^3.2.0
   ffi: ^2.1.0
 
 dev_dependencies:
