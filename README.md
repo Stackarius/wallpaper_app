@@ -3,7 +3,7 @@
 A modern wallpaper application built with Flutter that allows users to browse, favorite, and set wallpapers on their devices.
 
 Drive release folder: https://drive.google.com/drive/folders/1Zr-4ufr08dp4roN4KwbZBBsCmRF0EPMJ?usp=drive_link <br/>
-Release exe: https://github.com/Stackarius/wallpaper_app/releases/tag/Release_v1 <br/>
+Download Release exe: (https://github.com/Stackarius/wallpaper_app/releases/download/Release_v1/wallpaper_app.exe) <br/>
 Github repo: https://github.com/Stackarius/wallpaper_app.git
 
 ## Features
