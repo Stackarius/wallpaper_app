@@ -1,6 +1,10 @@
 # Wallpaper App
 
-A modern wallpaper application built with Flutter that allows users to browse, favorite, and set wallpapers on their device.
+A modern wallpaper application built with Flutter that allows users to browse, favorite, and set wallpapers on their devices.
+
+Drive release folder: https://drive.google.com/drive/folders/1Zr-4ufr08dp4roN4KwbZBBsCmRF0EPMJ?usp=drive_link <br/>
+Release exe: https://github.com/Stackarius/wallpaper_app/releases/tag/Release_v1 <br/>
+Github repo: https://github.com/Stackarius/wallpaper_app.git
 
 ## Features
 
@@ -64,7 +68,7 @@ lib/
 1. Clone the repository
 
 ```bash
-git clone [repository-url]
+git clone https://github.com/Stackarius/wallpaper_app.git
 ```
 
 2. Navigate to the project directory
@@ -94,6 +98,8 @@ flutter build windows
 ```
 
 The built application will be available in the `build/windows` directory.
+
+
 
 ## Dependencies
 
