@@ -4,9 +4,6 @@ import 'package:wallpaper_app/screens/wallpaper_screen.dart';
 import 'package:wallpaper_app/utils/responsive.dart';
 import 'package:wallpaper_app/widgets/wallpaper_card.dart';
 
-import 'package:provider/provider.dart';
-import 'package:wallpaper_app/provider/favorite_provider.dart';
-
 class CategoryGrid extends StatelessWidget {
   const CategoryGrid({super.key});
 

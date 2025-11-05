@@ -1,10 +1,9 @@
-// lib/dialogs/wallpaper_setup_dialog.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:wallpaper_app/constants/colors.dart';
 
 class WallpaperSetupDialog extends StatefulWidget {
-  const WallpaperSetupDialog({Key? key}) : super(key: key);
+  const WallpaperSetupDialog({super.key});
 
   @override
   State<WallpaperSetupDialog> createState() => _WallpaperSetupDialogState();
