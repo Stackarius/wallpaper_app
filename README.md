@@ -5,6 +5,7 @@ A modern wallpaper application built with Flutter that allows users to browse, f
 Drive release folder: https://drive.google.com/drive/folders/1Zr-4ufr08dp4roN4KwbZBBsCmRF0EPMJ?usp=drive_link <br/>
 Download Release exe: (https://github.com/Stackarius/wallpaper_app/releases/download/Release_v1/wallpaper_app.exe) <br/>
 Github repo: https://github.com/Stackarius/wallpaper_app.git
+Demo video: https://drive.google.com/file/d/1MvQdhrIvuR3vtO3CUj5NuwUvmvCDWQ6n/view?usp=sharing
 
 ## Features
 
