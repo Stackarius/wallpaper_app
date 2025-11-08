@@ -11,7 +11,8 @@ class CustomAppbar extends StatefulWidget {
 }
 
 class _CustomAppbarState extends State<CustomAppbar> {
-  int _selectedIndex = 0;
+  // The selected index is now read from NavigationProvider to keep
+  // the UI in sync with programmatic changes to navigation.
 
   @override
   Widget build(BuildContext context) {
@@ -69,17 +70,16 @@ class _CustomAppbarState extends State<CustomAppbar> {
           navItems.asMap().entries.map((entry) {
             int index = entry.key;
             Map<String, dynamic> item = entry.value;
-            bool isSelected = _selectedIndex == index;
+            bool isSelected = navigationProvider.selectedIndex == index;
 
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: InkWell(
                 borderRadius: BorderRadius.circular(8),
                 onTap: () {
-                  setState(() {
-                    _selectedIndex = index;
-                    context.read<NavigationProvider>().setSelectedIndex(index);
-                  });
+                  // Update provider; provider change will rebuild this widget
+                  // and keep the visual indicator in sync.
+                  context.read<NavigationProvider>().setSelectedIndex(index);
                 },
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
