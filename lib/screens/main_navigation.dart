@@ -8,19 +8,26 @@ import 'package:wallpaper_app/screens/settings_screen.dart';
 import 'package:wallpaper_app/widgets/custom_appbar.dart';
 
 class MainNavigation extends StatefulWidget {
-  const MainNavigation({super.key});
+  final Widget? initialScreen;
+  const MainNavigation({super.key, this.initialScreen});
 
   @override
   State<MainNavigation> createState() => _MainNavigationState();
 }
 
 class _MainNavigationState extends State<MainNavigation> {
-  final List _pages = const [
-    HomeScreen(),
-    BrowseScreen(),
-    FavoriteScreen(),
-    SettingsScreen(),
-  ];
+  late final List<Widget> _pages;
+
+  @override
+  void initState() {
+    super.initState();
+    _pages = [
+      HomeScreen(),
+      widget.initialScreen ?? BrowseScreen(),
+      FavoriteScreen(),
+      SettingsScreen(),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
