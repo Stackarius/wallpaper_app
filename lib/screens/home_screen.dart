@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           "See All",
                           style: TextStyle(
                             color: AppColors.blackPrimary.withOpacity(0.8),
-                            fontSize: 24.sp,
+                            fontSize: 20.sp,
                           ),
                         ),
                       ),

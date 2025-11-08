@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:wallpaper_app/provider/favorite_provider.dart';
 import 'package:wallpaper_app/widgets/gradient_text.dart';
+import 'package:wallpaper_app/provider/navigation_provider.dart';
 
 import '../constants/colors.dart';
 
@@ -95,7 +96,11 @@ class _FavoriteScreenState extends State<FavoriteScreen> {
           SizedBox(height: 32.h),
           ElevatedButton(
             onPressed: () {
-              // Navigate to Browse tab
+              // Switch to the Browse tab (index 1)
+              Provider.of<NavigationProvider>(
+                context,
+                listen: false,
+              ).setSelectedIndex(1);
             },
             style: ElevatedButton.styleFrom(
               backgroundColor: AppColors.orange,

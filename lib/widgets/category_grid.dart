@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:wallpaper_app/models/wallpaper.dart';
+import 'package:wallpaper_app/provider/navigation_provider.dart';
+import 'package:wallpaper_app/screens/main_navigation.dart';
 import 'package:wallpaper_app/screens/wallpaper_screen.dart';
 import 'package:wallpaper_app/utils/responsive.dart';
 import 'package:wallpaper_app/widgets/wallpaper_card.dart';
@@ -76,12 +79,21 @@ class CategoryGrid extends StatelessWidget {
       itemBuilder:
           (context, index) => GestureDetector(
             onTap: () {
+              // First set the navigation index
+              Provider.of<NavigationProvider>(
+                context,
+                listen: false,
+              ).setSelectedIndex(1);
+
+              // Then navigate to the new screen
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder:
-                      (context) => WallpaperScreen(
-                        categoryName: wallpapers[index].title,
-                        categoryDescription: wallpapers[index].category!,
+                      (context) => MainNavigation(
+                        initialScreen: WallpaperScreen(
+                          categoryName: wallpapers[index].title,
+                          categoryDescription: wallpapers[index].category!,
+                        ),
                       ),
                 ),
               );
